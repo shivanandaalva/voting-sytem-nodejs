@@ -8,6 +8,11 @@ router.get('/',function(req,res){
   //__dirname : It will resolve to your project folder.
 });
 
+router.get('/voting',function(req,res){
+  res.sendFile(path.join(__dirname+'/voting.html'));
+});
+
+
 
 //add the router
 app.use('/', router);
